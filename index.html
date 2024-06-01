@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script defer src="./scripts/script.js"></script>
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="articleContainer">
+        <section id="mainCard" class="card">
+          <div class="card__bgImage"></div>
+          <div class="card__wrapper">
+            <section class="card__content">
+              <section class="card__legend">
+                <h1>Stay updated!</h1>
+                <p class="paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+                <section class="card__blockList"></section>
+                <section class="card__listWrapper">
+                  <span class="card__iconlist"><img class="card__iconSuccess" src="./assets/images/icon-list.svg" alt="icon list" /></span>
+                  <p>Product discovery and building what matters</p>
+                </section>
+                <section class="card__listWrapper">
+                  <span class="card__iconlist"><img class="card__iconSuccess" src="./assets/images/icon-list.svg" alt="icon list" /></span>
+                  <p>Measuring to ensure updates are a success</p>
+                </section>
+                <section class="card__listWrapper">
+                  <span class="card__iconlist"><img class="card__iconSuccess" src="./assets/images/icon-list.svg" alt="icon list" /></span>
+                  <p>And much more!</p>
+                </section>
+              </section>
+              <!-- Sign-up form start -->
+              <form id="form" action="" class="newsletter-form" onsubmit="return validateForm()">
+                <label class="newsletter-form__label" for="email">Email address:</label>
+                <input id="email" class="newsletter-form__input" type="email" name="email" placeholder="email@company.com" required />
+                <input id="submitBtn" class="newsletter-form__submitBtn" type="submit" value="Subscribe to monthly newsletter" />
+              </form>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <section class="modal" id="mainModal">
+      <div><img class="card__iconSuccess" src="./assets/images/icon-success.svg" alt="icon image" /></div>
+      <i class="fab fa-facebook-f"></i>
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+      <section id="dismissBtn" class="modal__dismissBtn">Dismiss message</section>
+    </section>
+    <!-- Success message end -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Junier Bolívar © 2024</a>
+    </footer>
+  </body>
+</html>
